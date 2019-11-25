@@ -2,7 +2,6 @@ package co.com.belatrix.test.infraestructure.utils;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.UncheckedIOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -10,6 +9,8 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Optional;
 import java.util.stream.Stream;
+
+import co.com.belatrix.test.infraestructure.exception.DocumentFileException;
 
 public final class FileUtils {
 
@@ -21,10 +22,8 @@ public final class FileUtils {
 			Path pathFile = Paths.get(directionFile);
 			return Optional.of(Files.lines(pathFile));
 		} catch (IOException e) {
-			// TODO : implementar log y cambiarlo por el print
-			e.printStackTrace();
+			throw new DocumentFileException(e.getMessage());
 		}
-		return Optional.empty();
 	}
 
 	/**
@@ -38,11 +37,11 @@ public final class FileUtils {
 	               br.write(file);
 	               br.newLine();
 	            } catch (IOException e) {
-	               throw new UncheckedIOException(e);
+	    			throw new DocumentFileException(e.getMessage());
 	            }
 	         });
 	      } catch (Exception e) {
-	         e.printStackTrace();
+	  			throw new DocumentFileException(e.getMessage());
 	      }
 	}
 }

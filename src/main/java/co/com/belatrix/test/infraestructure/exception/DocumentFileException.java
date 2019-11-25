@@ -1,4 +1,4 @@
-package co.com.belatrix.test.infraestructure.exception.advisor;
+package co.com.belatrix.test.infraestructure.exception;
 
 import co.com.bellatrix.test.domain.constants.errors.DocumentErrorCode;
 
