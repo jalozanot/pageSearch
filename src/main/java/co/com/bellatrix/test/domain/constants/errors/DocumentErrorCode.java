@@ -9,7 +9,7 @@ public enum DocumentErrorCode {
 
 	DOCUMENT_ERROR("Error in  document", ErrorCodes.NOTIFICATIONSOURCE),
 	
-	FILE_NOT_SUPPORT_ERROR("producto no soportado", ErrorCodes.NOTIFICATIONSOURCE);
+	FILE_NOT_SUPPORT_ERROR("file no support", ErrorCodes.NOTIFICATIONSOURCE);
 	
 	private DocumentErrorCode(final String errorMessage, final String apiCode) {
 		this.errorMessage = errorMessage;
