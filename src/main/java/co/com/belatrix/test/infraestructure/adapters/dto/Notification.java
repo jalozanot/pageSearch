@@ -1,6 +1,6 @@
 package co.com.belatrix.test.infraestructure.adapters.dto;
 
-import co.com.bellatrix.test.domain.constants.errors.DocumentErrorCode;
+import co.com.belatrix.test.domain.constants.errors.DocumentErrorCode;
 
 public class Notification {
 	

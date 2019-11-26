@@ -1,4 +1,4 @@
-package co.com.bellatrix.test.domain.constants.errors;
+package co.com.belatrix.test.domain.constants.errors;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

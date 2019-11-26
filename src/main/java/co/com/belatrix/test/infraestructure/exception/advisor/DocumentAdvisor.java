@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import co.com.belatrix.test.infraestructure.adapters.dto.Notification;
 import co.com.belatrix.test.infraestructure.exception.DocumentFileException;
-import co.com.bellatrix.test.domain.constants.errors.ErrorCodes;
+import co.com.belatrix.test.domain.constants.errors.ErrorCodes;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

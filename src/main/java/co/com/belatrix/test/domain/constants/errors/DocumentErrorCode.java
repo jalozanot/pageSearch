@@ -1,10 +1,6 @@
-package co.com.bellatrix.test.domain.constants.errors;
+package co.com.belatrix.test.domain.constants.errors;
 
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter
-@Setter
 public enum DocumentErrorCode {
 
 	DOCUMENT_ERROR("Error in  document", ErrorCodes.NOTIFICATIONSOURCE),

@@ -1,4 +1,4 @@
-package co.com.belatrix.test.infraestructure;
+package co.com.belatrix.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
