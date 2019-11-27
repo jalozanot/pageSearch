@@ -1,19 +1,18 @@
 package co.com.belatrix.test.application;
 
-import co.com.belatrix.test.application.service.PageDocumentService;
 import co.com.belatrix.test.domain.Page;
-import org.springframework.stereotype.Service;
+import co.com.belatrix.test.domain.ports.PageRepository;
 
-@Service
+
 public class SaveUrlContent {
 
-    private PageDocumentService pageDocumentService;
+    private final PageRepository pageRepository;
 
-    public SaveUrlContent(PageDocumentService pageDocumentService){
-        this.pageDocumentService = pageDocumentService;
+    public SaveUrlContent(final PageRepository pageRepository){
+        this.pageRepository = pageRepository;
     }
     public void handler(){
         Page page = new Page("www.google.com.co","<html>");
-        this.pageDocumentService.savePage(page);
+        this.pageRepository.savePage(page);
     }
 }
